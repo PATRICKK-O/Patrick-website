@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .holder-div {
+                position: fixed;
+            }
+            .first-div {
+                background-color: rgb(48, 46, 46);
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                top: 0;
+                width: 60px;
+            }
+            .second-div {
+                background-color: rgb(95, 94, 94);
+                position: fixed;
+                left: 60px;
+                bottom: 0;
+                top: 0;
+                width: 170px;
+                display: flex;
+                flex-direction: row;
+            }
+            .picture {
+                height: 45px;
+                width: 45px;
+                border-radius: 30px;
+                margin-bottom: 4px;
+            }
+            .picture-div {
+                margin-top: 6px;
+                margin-left: 6px;
+            }
+            .info {
+                color: white;
+                font-family: Roboto, Arial;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .paragraph {
+                color: rgba(255, 255, 255, 0.55)
+            }
+            .paragraph-div {
+                margin-left: 8px;
+            }
+            .plus-sign {
+                color: white;
+                font-size: 18px;
+                margin-left: 30px;
+                font-weight: bold;
+                margin-top: 9px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="holder-div">
+            <div class="first-div">
+                <div class="picture-div">
+                    <img class="picture" src="thumbnails/cristiano-ronaldo-portugal-5-june-2022.jpg">
+                    <img class="picture" src="thumbnails/agencia-efe_multimedia_55009734559.multimedia.photos.55009734559003.file.jpg">
+                    <img class="picture" src="thumbnails/gettyimages-1383829178-612x612.jpg">
+                </div> 
+            </div>
+
+            <div class="second-div">
+                <div class="paragraph-div">
+                    <p class="info">INFO</p>
+                    <p class="paragraph"># new-videos</p>
+                    <p class="paragraph"># updates</p>
+                    <p class="paragraph"># faq</p>
+                </div>
+                <div class="plus-sign">+</div>
+            </div>   
+        </div>
+    </body>
+</html>

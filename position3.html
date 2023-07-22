@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .picture {
+                height: 30px;
+                width: 30px;
+                border-radius: 15px;
+                object-position: contain;
+                vertical-align: top;
+            }
+            .vini {
+                font-family: Roboto, Arial;
+                font-size: 12px;
+                font-weight: bold;
+                display: inline-block;
+                margin-left: 4px;
+                margin-top: 8px;
+            }
+            .holder-div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .left-section-div {
+                margin-left: 80px;
+            }
+            .right-section-div {
+                margin-right: 80px;
+            }
+            .button {
+                background-color: rgb(6, 95, 212);
+                color: white;
+                border: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 3px;
+                padding-right: 3px;
+                border-radius: 3px;
+                font-size: 11px;
+            }
+            .message-button {
+                background-color: rgba(0, 0, 0, 0.2);
+                border: none;
+                color: black;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 3px;
+                padding-right: 3px;
+                border-radius: 3px;
+                font-size: 11px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="holder-div">
+            <div class="left-section-div">
+                <img class="picture" src="thumbnails/0_Vinicius-Junior.jpg">
+                <p class="vini">Vinicius JR</p>
+            </div>
+            <div class="right-section-div">
+                <button class="button">Add Friend</button>
+                <button class="message-button">Message</button>
+            </div>
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           .div{
+               background-color: lightpink;
+               height: 100px;
+               width: 200px;
+           }
+           .main-div{
+               background-color: lightblue;
+               display: flex;
+               flex: 1;
+               justify-content: space-between;
+           }
+           .super-div{
+               display: flex;
+               flex-direction: row;
+           }
+           .button{
+               background-color: black;
+               color: white;
+               height: 25px;
+               width: 65px;
+               border: none;
+           }
+           .combine{
+               display: flex;
+               flex-direction: column;
+               margin-top: 11px;
+           }
+           .row3{
+               margin-top: 32px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="super-div">
+            <div class="div"></div>
+        <div class="main-div">
+            <div class="combine">
+                <div class="row1">row 1</div>
+            <div class="row2">
+                <button class="button">row2</button>
+            </div>
+            </div>
+            <div class="row3">
+                <button class="button">row3</button>
+            </div>
+        </div>
+        </div>
+        
+    </body>
+</html>

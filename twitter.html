@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitter</title>
+        <style>
+            body {
+                background-color: rgb(158, 156, 156);
+                position: relative;
+                font-family: Roboto, Arial;
+            }
+            .main-div {
+                background-color: white;
+                height: 530px;
+                width: 580px;
+                position: absolute;
+                left: 300px;
+                top: 25px;
+                border-radius: 15px;
+            }
+            .signer {
+                font-size: 32px;
+                font-weight: bold;
+                margin-left: 130px;
+                margin-bottom: 30px;
+            }
+            .first-hr {
+                margin-left: 20px;
+                display: inline-block;
+                width: 130px;
+            }
+            .or {
+                display: inline-block;
+                margin-top: 0;
+                vertical-align: top;
+            }
+            .second-hr {
+                display: inline-block;
+                width: 130px;
+            }
+            .hr-container {
+                margin-left: 118px;
+            }
+            .google-button {
+                padding: 9px 73px 9px 80px;
+                display: flex;
+                flex-direction: row;
+                margin-left: 125px;
+                margin-bottom: 24px;
+                background-color: white;
+                border-width: 1px;
+                border-color: lightgray;
+                border-style: solid;
+                border-radius: 23px;
+                cursor: pointer;
+            }
+            .google-button:hover {
+                background-color: rgb(234, 244, 248);
+                border-color: rgb(217, 231, 236);
+            }
+            .apple-button {
+                padding: 10px 63px 10px 80px;
+                display: flex;
+                flex-direction: row;
+                margin-left: 125px;
+                margin-bottom: 9px;
+                background-color: white;
+                border-width: 1px;
+                border-color: lightgray;
+                border-style: solid;
+                border-radius: 23px;
+                cursor: pointer;
+            }
+            .apple-button:hover {
+                background-color: rgb(230, 221, 221);
+            }
+            .sign-apple {
+                margin-top: 3px;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .sign-google {
+                line-height: 20px;
+                font-size: 14px;
+            }
+            .twitter-image {
+                width: 23px;
+                height: 23px;
+                margin-left: 240px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            .search-bar {
+                display: block;
+                padding: 18px 130px 18px 5px;
+                margin-left: 135px;
+                border-color: rgb(224, 221, 221);
+                border-style: solid;
+                border-width: 1px;
+                margin-bottom: 23px;
+            }
+            ::placeholder {
+                font-size: 17px;
+                font-weight: 500;
+            }
+            .next-button {
+                padding: 9px 137px 9px 130px;
+                display: block;
+                margin-left: 130px;
+                background-color: black;
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 16px;
+                font-size: 15px;
+                margin-bottom: 25px;
+                cursor: pointer;
+            }
+            .next-button:hover {
+                opacity: 0.8;
+            }
+            .forgot-button {
+                padding: 9px 95px 9px 90px;
+                display: block;
+                margin-left: 130px;
+                margin-bottom: 50px;
+                border-radius: 25px;
+                background-color: white;
+                border-width: 1px;
+                border-style: solid;
+                border-color:rgb(185, 182, 182);
+                color: black;
+                font-weight: bold;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .forgot-button:hover {
+                background-color: lightgray;
+            }
+            .header {
+                display: flex;
+                flex-direction: row;
+                height: 70px;
+            }
+            .x-holder {
+                background-color: white;
+                border-radius: 15px;
+                height: 30px;
+                width: 30px;
+                margin-left: 8px;
+                margin-top: 8px;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+                position: relative;
+            }
+            .x {
+                font-family: Roboto, Arial;
+                font-size: 23px;
+            }
+            .account {
+                margin-left: 135px;
+                font-size: 15px;
+            }
+            .x-holder:hover {
+                background-color: rgb(230, 221, 221);
+            }
+            .close {
+                background-color: rgb(95, 94, 94);
+                color: white;
+                position: absolute;
+                font-size: 12px;
+                left: 1px;
+                bottom: -15px;
+                padding: 1px 3px 1px 3px;
+            }
+            .sign-up {
+                color: rgb(90, 187, 219);
+                cursor: pointer;
+            }
+            .sign-up:hover {
+                text-decoration: underline;
+            }
+            .x-holder .close {
+                opacity: 0;
+                transition: 2s;
+                pointer-events: none;
+            }
+            .x-holder:hover .close {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-div">
+            <div class="header">
+                <div class="x-holder">
+                    <div class="x">x</div>
+                    <div class="close">Close</div>
+                </div>
+                
+                <img class="twitter-image" src="thumbnails/download.png">
+            </div>
+            <div class="signer">Sign in to Twitter</div>
+            <button class="google-button">
+                <svg style="width: 17px; margin-right: 5px; margin-top: 2px;" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="LgbsSe-Bz112c"><g><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></g></svg>
+                <div class="sign-google">Sign in with Google</div>
+            </button>
+            <button class="apple-button">
+                <img style="width: 19px; margin-right: 5px;" alt="Image result for apple sign" id="dimg_1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGsl2kumCmOmP8h-4UCcJ8YNPcqKgrpUw8voNXg7T3VA&amp;s" data-atf="1" data-frt="0">
+                <div class="sign-apple">Sign in with Apple</div>
+            </button>
+            
+            <div class="hr-container">
+                <hr class="first-hr"> <div class="or">or</div>  <hr class="second-hr">
+            </div>
+            <input class="search-bar" type="text" placeholder="Phone, email, or username">
+            <button class="next-button">Next</button>
+            <button class="forgot-button">Forgot Password?</button>
+            <p class="account">Dont have an account?<span class="sign-up">Sign up</span></p>
+            
+        </div>
+    </body>
+</html>
